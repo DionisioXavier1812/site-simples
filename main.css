@@ -1,0 +1,63 @@
+:root {
+    --green: #00ff00;
+    --white: #ffffff;
+    --black: #000000;
+    --btnFontColor: var(--black);
+    --btnBg: var(--green);
+    --fontcolor: var(--black);
+    --bg: var(--green);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus {
+    outline-style: none;
+}
+
+* {
+    color: var(--fontcolor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+    font-family: monospace;
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    color: var(--black);
+    background: var(--green);
+    --bg: var(--green);
+    --fontcolor: var(--black);
+}
+
+.dark-theme {
+    color: var(--green);
+    background: var(--black);
+    --bg: var(--black);
+    --fontcolor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
